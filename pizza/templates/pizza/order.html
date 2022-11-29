@@ -1,7 +1,9 @@
-<h1>Order a Pizza</h1>
+<h1 style="text-align: center;">Order a Pizza</h1>
+
+<h2 style="color:rgba(26, 29, 245, 0.623);text-align: center;">{{ note }}</h2>
 <!-- <table border="3" style="border-style: solid;">
     <td> -->
-<form action="{% url 'order' %}" method="post" style="padding: 5px;">
+<form action="{% url 'order' %}" method="post" style="padding: 5px; text-align: center;">
     {% csrf_token %} {{ PizzaForm }}
     <!-- <label for="topping1">Topping 1: </label>
             <input type="text" id="topping1" name="topping1">
@@ -23,4 +25,4 @@
 <!-- </td>
 </table>
 <br><br> -->
-<a href="{% url 'home' %}" style="text-decoration: none;">Back to Home Page</a>
+<div style="text-align: center; "><a href="{% url 'home' %}" style="text-decoration: none;">Back to Home Page</a></div>
